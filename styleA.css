@@ -4,7 +4,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: content-box;
-  
+    height: auto;
 }
 body{
     height: 100%;
