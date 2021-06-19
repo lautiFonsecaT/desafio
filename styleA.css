@@ -1,0 +1,589 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: content-box;
+  
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+    
+    /*-------home-------*/
+.divContenedor{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 300px 600px 300px 700px 300px;
+    grid-template-areas: "header header header"
+                          "mainUno mainUno mainUno"
+                          "banner banner banner"
+                          "mainDos mainDos mainDos"
+                          "footer footer footer";
+    row-gap: 10px;
+    overflow: none;
+                          
+
+}
+.header{
+    grid-area: header;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #152039 ;
+    align-items: flex-end;
+}
+.divHeaderIcono{
+    display: inline-block;
+    position: relative;
+    left: 65%;
+    bottom: 86%;
+}
+.divHeaderIcono>a>i{
+    color: rgb(180, 175, 175);
+    opacity: 10px;
+}
+
+.headerLogo{ 
+    width: 30%;
+    height: 100%;
+}
+.headerLogo a{
+    display: flex;
+    height: 100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.headerLogo a img{
+    height: 70%;
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.headerLogo a img:hover{
+    transform: scale( 1.1, 1.1);
+    transition: 1s;
+}
+.headerNav{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    height: 50%;
+    width: 66.6%;
+    right: 30px;
+    bottom: 30px;
+}
+.headerNav ul{
+    display: flex;
+    width: 100%;
+    height: 53%;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.headerNav ul li>a{
+    color: white;
+    text-transform: capitalize;
+    font-family:'poppins';
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header ul li>a:hover{
+    background-color: rgb(184, 66, 45);
+    border-radius: 30px;
+    transition: 1s;
+}
+
+/*-----mainUno-----*/
+.mainUno{
+    display: flex;
+    grid-area: mainUno;
+    height: 100%;
+    width: 100%;
+}
+
+
+.hUno h1{
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Staatliches';
+    font-size: 45px;
+    width: 500px;
+    left: 190%;
+}
+
+/*-------articleUno------*/
+.articleUno{
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+
+}
+.divArticleUno{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    height: 60%;
+    width: 75%;
+   
+    
+}
+.divArticleUno a>img{
+    display: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%; 
+    
+     
+}
+.divArticleUno:hover{
+    transform: scale(0.9,0.9);
+    transition: 2s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.divArticleUno div{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    text-transform: capitalize;
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/*-------artcileDos-------*/
+.articleDos{
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+}
+.divArticleDos{
+    position: relative;
+    top: 20%;
+    left: 4%;
+    height: 60%;
+    width: 75%;
+}
+.divArticleDos a>img{
+    display: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%; 
+     
+     
+}
+.divArticleDos:hover{
+    transform: scale(0.9,0.9);
+    transition: 2s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.divArticleDos div{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    text-transform: capitalize;
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.hUno{
+    height: 10% ;
+    width: 10%;
+}
+
+
+/*------articleTres----*/
+.articleTres{
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+
+}
+.divArticleTres{
+    position: relative;
+    top: 20%;
+    left: 16%;
+    height: 60%;
+    width: 75%;
+   
+    
+}
+.divArticleTres a>img{
+    display: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%; 
+    
+     
+}
+.divArticleTres:hover{
+    transform: scale(0.9,0.9);
+    transition: 2s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.divArticleTres div{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    text-transform: capitalize;
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+/*------sectionBanner----*/
+.asaidBanner{
+    grid-area: banner;
+    width: 100%;
+    height: 100%;
+}
+.asaidBanner div{
+    width: 100%;
+    height: 100%;
+    
+}
+.asaidBanner div>a>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+    box-shadow: 1px 1px 20px black;
+}
+
+/*-----mainDos-----*/
+
+.mainDos{
+    display: flex;
+    grid-area: mainDos;
+    height: 100%;
+    width: 100%;
+}
+.mainDos>div{
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Staatliches';
+    font-size: 40px;
+    width: 33.3;
+    height: 10%;
+    left: 37%;
+}
+
+.mainSectionUno{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items:  center;
+    height: 100%;
+    width: 33.3%;
+}
+.mainSectionUno>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 60%;
+    width: 74%;
+}
+.mainSectionUno>div:hover{
+    box-shadow:1px 2px 5px gray;
+    transition-duration: 1s;
+    border-radius: 6%;
+}
+.mainSectionUno div>div>img{
+    width: 99%;
+}
+.descripRopaUno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+.descripRopaUno h3{
+    font-size: 23px;
+    font-weight: 500;
+}
+.descripRopaUno p{
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+
+/*-------sectionDos------*/
+    
+.mainSectionDos{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 33.3%;
+    height: 100%;
+    width: 33.3%;
+
+}
+.mainSectionDos>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 60%;
+    width: 74%;
+}
+.mainSectionDos>div:hover{
+    box-shadow:1px 2px 5px gray;
+    transition-duration: 1s;
+    border-radius: 6%;
+}
+.mainSectionDos div>div>img{
+    width: 99%;
+}
+.descripRopaDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+.descripRopaDos h3{
+    font-size: 23px;
+    font-weight: 500;
+}
+.descripRopaDos p{
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+
+/*------sectionTres------*/
+
+
+.mainSectionTres{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+    height: 100%;
+    width: 33.3%;
+}
+.mainSectionTres>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 60%;
+    width: 74%;
+}
+.mainSectionTres>div:hover{
+    box-shadow:1px 2px 5px gray;
+    transition-duration: 1s;
+    border-radius: 6%;
+}
+.mainSectionTres div>div>img{
+    width: 99%;
+}
+.descripRopaTres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+.descripRopaTres h3{
+    font-size: 23px;
+    font-weight: 500;
+}
+.descripRopaTres p{
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+/*-------footer------*/
+
+.footer{
+    display: flex;
+    background-color: rgb(29, 28, 28);
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+}
+.navFooterUno{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+
+}
+.navFooterUno h2{
+    font-size: 50px;
+    font-family: 'Staatliches' ;
+    font-weight: 900;
+    color: beige;
+}
+.navFooterUno ul{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.navFooterUno ul a>li{
+    color: bisque;
+    font-family: 'poppins';
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+.navFooterDos{
+    position: relative;
+    height: 100%;
+    left: 18%;
+    display: flex;
+    flex-direction: column;
+}
+.navFooterDos h2{
+    font-size: 50px;
+    font-family: 'Staatliches' ;
+    font-weight: 900;
+    color: beige;
+}
+
+.navFooterDos ul a>li{
+    color: bisque;
+    font-family: 'poppins';
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+
+
+/*-----APARTADOS------*/
+.divContenedorApartados{
+    display: grid;
+    grid-template-columns: 28% 24% 24% 24% ;
+    grid-template-rows:300px 150px 250px 250px 250px 250px 250px;
+    grid-template-areas: "header header header header"
+                          "barra titulo titulo titulo"
+                          " nav main main main"
+                            "nav main main main"
+                            "nav main main main"
+                             "aside main main main"
+                             "footer footer footer footer";
+
+    
+}
+
+/*------BarraDeBusqueda------*/
+
+.sectionBuscador{
+    grid-area: barra;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sectionBuscador form{
+    display: flex;
+    width: 250px;
+    align-items: center;  
+}
+.sectionBuscador form>fieldset{
+    width: 400px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;   
+}
+.sectionBuscador  input , button{
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    border-radius: 5px;
+}
+.sectionBuscador form>fieldset>input{
+    border: none;
+    color: black;
+    background-color: white;
+    font-family: 'poppins';
+    width: 73.3%;
+    z-index: 3;
+}
+.sectionBuscador form>fieldset>button{
+    width: 25%;
+    border: none;
+    background-color: rgba(34, 34, 34, 0.473);
+    padding-right: 0;
+}
+  /*------tituloMensaje-----*/
+
+.sectionTitulo{
+    display: flex;
+    flex-direction: column;
+    grid-area: titulo;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sectionTitulo h1{
+    font-family: 'Staatliches';
+    font-size: 45px;
+}    
+.sectionTitulo p{
+    font-family: 'poppins';   
+}
+.navFiltro{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-right:1px solid rgb(105, 105, 105) ;
+    height: 100%;
+    width: 100%;
+    text-transform: capitalize;    
+    font-size: 18px;
+    font-family: 'poppins';
+}
+.navFiltro h3{
+    font-size: 30px;
+    font-family: 'Staatliches';
+    padding-left: 50px;
+    padding-top: 30px;
+
+}
+.navFiltro ul{
+    padding-left: 70px;
+    padding-top: 15px;
+}
+.navFiltro ul>li>a{
+    color: black;
+}
+
+
+
+
+
+
+
+
